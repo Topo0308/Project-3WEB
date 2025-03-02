@@ -12,3 +12,113 @@
 .white-text {
     color: #0006c0;
 }
+:root {
+    --primary-color: #ff3a3a;
+    --dark-gray: #4a4f55;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.top-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+}
+
+.phone-number {
+    color: white;
+    font-weight: bold;
+}
+
+.auth-buttons .btn {
+    background-color: #222;
+    color: white;
+    margin-left: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.featured-title {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 10px;
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+}
+
+.movie-card {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .movie-card:hover {
+            transform: translateY(-5px);
+        }
+.movie-thumbnail {
+    background-color: var(--dark-gray);
+    height: 300px;
+    width: 100%;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #eee;
+    border: none;
+    margin-right: 5px;
+    padding: 5px 15px;
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.social-sidebar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-btn {
+    display: block;
+    width: 70px; /* Three times longer */
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 0 5px 5px 0;
+}
+.twitter { background-color: #026aa5; }
+.facebook { background-color: #3b5998; width: 120px; }
+.instagram { background-color: #e1306c; }
+.google { background-color: #db4a39; }
+
+.load-more {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    text-transform: uppercase;
+}

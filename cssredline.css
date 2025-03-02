@@ -60,7 +60,7 @@ body {
             transform: translateY(-5px);
         }
 .movie-thumbnail {
-    background-color: var(--dark-gray);
+    background-color: var(--dark-white);
     height: 300px;
     width: 100%;
 }

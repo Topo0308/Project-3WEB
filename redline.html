@@ -393,8 +393,7 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Movie Card 3 -->
+            
                 <div class="movie-card" onclick="showMovieDetail('Deadpool', '2016', '15 Euro', 'Action | Comedy', 'A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.')">
                     <div class="movie-poster">
                         <img src="images/q.jpg" alt="Deadpool">
@@ -408,7 +407,6 @@
                     </div>
                 </div>
                 
-                <!-- Movie Card 4 -->
                 <div class="movie-card" onclick="showMovieDetail('Rogue One', '2016', '15 Euro', 'Action | Sci-Fi', 'The Rebel Alliance makes a risky move to steal the plans for the Death Star, setting up the epic saga to follow.')">
                     <div class="movie-poster">
                         <img src="images/r.jpg" alt="Rogue One">
@@ -421,8 +419,7 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Movie Card 5 -->
+           
                 <div class="movie-card" onclick="showMovieDetail('Storks', '2016', '15 Euro', 'Drama | Adventure | Family', 'Andy Samberg Movie the company\'s top delivery stork, lands in hot water when the Baby Factory produces an adorable...')">
                     <div class="movie-poster">
                         <img src="images/s.jpg" alt="Storks">
@@ -436,8 +433,7 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Movie Card 6 -->
+
                 <div class="movie-card" onclick="showMovieDetail('Hopeless', '2016', '15 Euro', 'Drama', 'A story about hope and redemption in desperate times.')">
                     <div class="movie-poster">
                         <img src="images/t.jpg" alt="Hopeless">
@@ -450,8 +446,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Movie Card 7 -->
                 <div class="movie-card" onclick="showMovieDetail('Mechanic', '2016', '15 Euro', 'Action | Thriller', 'A skilled mechanic who specializes in eliminating targets is forced to come out of retirement.')">
                     <div class="movie-poster">
                         <img src="images/u.jpg" alt="Mechanic">
@@ -464,8 +458,7 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Movie Card 8 -->
+
                 <div class="movie-card" onclick="showMovieDetail('Timeless', '2016', '15 Euro', 'Sci-Fi | Adventure', 'A journey through time that tests the limits of human existence.')">
                     <div class="movie-poster">
                         <img src="images/w.jpg" alt="Timeless">
@@ -482,10 +475,8 @@
             
             <div class="movie-detail" id="movieDetail">
                 <div class="movie-detail-poster">
-                    <img src="/api/placeholder/450/450" alt="Storks" id="detailPoster">
-                    <div class="play-button">
-                        <i class="fas fa-play"></i>
-                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yVOq1V-RiiM?si=NObw8KGsqxtPAkbK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                   
                 </div>
                 <div class="movie-detail-info">
                     <h2 class="movie-detail-title" id="detailTitle">STORKS</h2>
@@ -493,13 +484,13 @@
                     <div class="info-row">
                         <div class="info-label">Story line</div>
                         <div class="info-value" id="detailStoryline">
-                            Starring: Andy Samberg, Jennifer Aniston, Ty Burrell Storks Official Trailer 3 (2016) - Andy Samberg Movie the company's top delivery stork, lands in hot water when the Baby Factory produces an adorable.....
+                            FAST & FURIOUS 11 Trailer (2026) Vin Diesel, Cody Walker, The Rock | Fast X Part 2 | 4.0
                         </div>
                     </div>
                     
                     <div class="info-row">
                         <div class="info-label">Release On</div>
-                        <div class="info-value" id="detailRelease">Aug 1, 2016</div>
+                        <div class="info-value" id="detailRelease">Aug 1, 2025</div>
                     </div>
                     
                     <div class="info-row">
@@ -528,7 +519,6 @@
             }
         }
         
-        // Default to showing Storks in detail view
         let currentMovie = {
             title: 'STORKS',
             year: '2016',
@@ -557,9 +547,6 @@
             document.getElementById('detailPoster').alt = currentMovie.title;
         }
     </script>
-
-<!-- Contact Us  -->
-
 <section class="contact-section">
     <div class="container">
         <div class="contact-heading">
@@ -596,7 +583,6 @@
     </div>
 </section>
 
-<!-- Subscribe Section -->
 <section class="subscribe-section">
     <div class="container">
         <div class="row">
@@ -611,11 +597,10 @@
     </div>
 </section>
 
-<!-- Footer Section -->
 <footer class="footer-section">
     <div class="container">
         <div class="row">
-            <!-- Release Column -->
+
             <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
                 <div class="footer-category">
                     <h4>RELEASE</h4>
@@ -630,7 +615,6 @@
                 </div>
             </div>
 
-            <!-- Movies Column -->
             <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
                 <div class="footer-category">
                     <h4>MOVIES</h4>
@@ -645,7 +629,6 @@
                 </div>
             </div>
 
-            <!-- Review Movies Column -->
             <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
                 <div class="footer-category">
                     <h4>REVIEW MOVIES</h4>
@@ -669,7 +652,6 @@
                 </div>
             </div>
 
-            <!-- Latest Movies Column -->
             <div class="col-md-3 col-sm-6">
                 <div class="footer-category">
                     <h4>LATEST MOVIES</h4>
@@ -691,30 +673,28 @@
 
         <div class="row mt-5">
             <div class="col-md-6 offset-md-3">
-                <!-- ALLEZCINE Logo -->
                 <div class="text-center mb-4">
                     <h2><span style="color: #ff3b30;">ALLEZ</span>CINE!</h2>
                 </div>
                 
-                <!-- Movie Grid -->
                 <div class="movie-grid">
                     <div class="movie-item">
-                        <img src="/api/placeholder/110/150" alt="Movie 1">
+                        <img src="images/111x155.jpg" alt="Movie 1">
                     </div>
                     <div class="movie-item">
-                        <img src="/api/placeholder/110/150" alt="Movie 2">
+                        <img src="images/e.jpg" alt="Movie 2">
                     </div>
                     <div class="movie-item">
-                        <img src="/api/placeholder/110/150" alt="Movie 3">
+                        <img src="images/h.jpg" alt="Movie 3">
                     </div>
                     <div class="movie-item">
-                        <img src="/api/placeholder/110/150" alt="Movie 4">
+                        <img src="images/e.jpg" alt="Movie 4">
                     </div>
                     <div class="movie-item">
-                        <img src="/api/placeholder/110/150" alt="Movie 5">
+                        <img src="images/p.jpeg" alt="Movie 5">
                     </div>
                     <div class="movie-item">
-                        <img src="/api/placeholder/110/150" alt="Movie 6">
+                        <img src="images/i.jpg" alt="Movie 6">
                     </div>
                 </div>
             </div>

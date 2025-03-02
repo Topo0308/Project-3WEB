@@ -502,49 +502,435 @@
                   </div>
               </div>
           </div>
-          <button class="load-more" style="width: 200px;">PLUS DES FILMS</button>
-             </div>
-             
+            <button class="load-more" style="width: 200px;">PLUS DES FILMS</button>
+      </div>
+       
      <!-- Shop Movies Section -->
-<section id="shop-movies" class="container">
-  <h2 class="featured-title">SHOP MOVIES</h2>
-  
-  
+      <section id="shop-movies" class="container">
+                <h2 class="featured-title">SHOP MOVIES</h2>
+      </section>
+    <div class="container mt-4">
+        <div class="movie-container">
+            <div class="nav-buttons">
+                <button class="nav-btn nav-btn-prev" onclick="scrollMovies('prev')">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn nav-btn-next" onclick="scrollMovies('next')">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="movie-carousel" id="movieCarousel">
+                <!-- Movie Card 1 -->
+                <div class="movie-card" onclick="showMovieDetail('Swiss Army Man', '2016', '15 Euro', 'Drama | Adventure', 'A man stranded in the wilderness befriends a dead body and together they go on a surreal journey to get home.')">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/175/240" alt="Swiss Army Man">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Swiss Army Man</h3>
+                        <div class="clearfix">
+                            <span class="movie-year">2016</span>
+                            <span class="movie-price">15 Euro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 2 -->
+                <div class="movie-card" onclick="showMovieDetail('Me Before You', '2016', '15 Euro', 'Drama | Romance', 'A girl in a small town forms an unlikely bond with a recently-paralyzed man she's taking care of.')">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/175/240" alt="Me Before You">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Me Before You</h3>
+                        <div class="clearfix">
+                            <span class="movie-year">2016</span>
+                            <span class="movie-price">15 Euro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 3 -->
+                <div class="movie-card" onclick="showMovieDetail('Deadpool', '2016', '15 Euro', 'Action | Comedy', 'A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.')">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/175/240" alt="Deadpool">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Deadpool</h3>
+                        <div class="clearfix">
+                            <span class="movie-year">2016</span>
+                            <span class="movie-price">15 Euro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 4 -->
+                <div class="movie-card" onclick="showMovieDetail('Rogue One', '2016', '15 Euro', 'Action | Sci-Fi', 'The Rebel Alliance makes a risky move to steal the plans for the Death Star, setting up the epic saga to follow.')">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/175/240" alt="Rogue One">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Rogue One</h3>
+                        <div class="clearfix">
+                            <span class="movie-year">2016</span>
+                            <span class="movie-price">15 Euro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 5 -->
+                <div class="movie-card" onclick="showMovieDetail('Storks', '2016', '15 Euro', 'Drama | Adventure | Family', 'Andy Samberg Movie the company\'s top delivery stork, lands in hot water when the Baby Factory produces an adorable...')">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/175/240" alt="Storks">
+                        <div class="new-badge">NEW</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Storks</h3>
+                        <div class="clearfix">
+                            <span class="movie-year">2016</span>
+                            <span class="movie-price">15 Euro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 6 -->
+                <div class="movie-card" onclick="showMovieDetail('Hopeless', '2016', '15 Euro', 'Drama', 'A story about hope and redemption in desperate times.')">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/175/240" alt="Hopeless">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Hopeless</h3>
+                        <div class="clearfix">
+                            <span class="movie-year">2016</span>
+                            <span class="movie-price">15 Euro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 7 -->
+                <div class="movie-card" onclick="showMovieDetail('Mechanic', '2016', '15 Euro', 'Action | Thriller', 'A skilled mechanic who specializes in eliminating targets is forced to come out of retirement.')">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/175/240" alt="Mechanic">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Mechanic</h3>
+                        <div class="clearfix">
+                            <span class="movie-year">2016</span>
+                            <span class="movie-price">15 Euro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 8 -->
+                <div class="movie-card" onclick="showMovieDetail('Timeless', '2016', '15 Euro', 'Sci-Fi | Adventure', 'A journey through time that tests the limits of human existence.')">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/175/240" alt="Timeless">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Timeless</h3>
+                        <div class="clearfix">
+                            <span class="movie-year">2016</span>
+                            <span class="movie-price">15 Euro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="movie-detail" id="movieDetail">
+                <div class="movie-detail-poster">
+                    <img src="/api/placeholder/450/450" alt="Storks" id="detailPoster">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="movie-detail-info">
+                    <h2 class="movie-detail-title" id="detailTitle">STORKS</h2>
+                    
+                    <div class="info-row">
+                        <div class="info-label">Story line</div>
+                        <div class="info-value" id="detailStoryline">
+                            Starring: Andy Samberg, Jennifer Aniston, Ty Burrell Storks Official Trailer 3 (2016) - Andy Samberg Movie the company's top delivery stork, lands in hot water when the Baby Factory produces an adorable.....
+                        </div>
+                    </div>
+                    
+                    <div class="info-row">
+                        <div class="info-label">Release On</div>
+                        <div class="info-value" id="detailRelease">Aug 1, 2016</div>
+                    </div>
+                    
+                    <div class="info-row">
+                        <div class="info-label">Genres</div>
+                        <div class="info-value" id="detailGenres">Drama | Adventure | Family</div>
+                    </div>
+                    
+                    <div class="info-row">
+                        <div class="info-label">Price</div>
+                        <div class="info-value" id="detailPrice">15 Euro</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const carousel = document.getElementById('movieCarousel');
+        const cardWidth = 190; 
+        
+        function scrollMovies(direction) {
+            if (direction === 'next') {
+                carousel.scrollLeft += cardWidth * 4;
+            } else {
+                carousel.scrollLeft -= cardWidth * 4;
+            }
+        }
+        
+        // Default to showing Storks in detail view
+        let currentMovie = {
+            title: 'STORKS',
+            year: '2016',
+            price: '15 Euro',
+            genres: 'Drama | Adventure | Family',
+            storyline: 'Starring: Andy Samberg, Jennifer Aniston, Ty Burrell Storks Official Trailer 3 (2016) - Andy Samberg Movie the company\'s top delivery stork, lands in hot water when the Baby Factory produces an adorable.....',
+            release: 'Aug 1, 2016'
+        };
+        
+        function showMovieDetail(title, year, price, genres, storyline) {
+            currentMovie = {
+                title: title.toUpperCase(),
+                year: year,
+                price: price,
+                genres: genres,
+                storyline: storyline,
+                release: 'Aug 1, 2016' 
+            };
+            
+            document.getElementById('detailTitle').textContent = currentMovie.title;
+            document.getElementById('detailStoryline').textContent = currentMovie.storyline;
+            document.getElementById('detailRelease').textContent = currentMovie.release;
+            document.getElementById('detailGenres').textContent = currentMovie.genres;
+            document.getElementById('detailPrice').textContent = currentMovie.price;
+            
+            document.getElementById('detailPoster').alt = currentMovie.title;
+        }
+    </script>
+
+<!-- Contact Us  -->
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-heading">
+            <h2>CONTACT US</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <form id="contactForm">
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <input type="text" class="form-control" placeholder="FIRST NAME" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="LAST NAME" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <input type="email" class="form-control" placeholder="EMAIL" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="SUBJECT" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="YOUR MESSAGE" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-send">SEND MESSAGE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- Contact Us Section -->
-<section id="contact-us" class="container">
-  <h2 class="featured-title">CONTACT US</h2>
-  
-  <form class="contact-form">
-      <div class="row">
-          <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="FIRST NAME" required>
-          </div>
-          <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="LAST NAME" required>
-          </div>
-      </div>
-      <div class="row mt-3">
-          <div class="col-md-6">
-              <input type="email" class="form-control" placeholder="EMAIL" required>
-          </div>
-          <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="SUBJECT" required>
-          </div>
-      </div>
-      <div class="row mt-3">
-          <div class="col-12">
-              <textarea class="form-control" rows="6" placeholder="YOUR MESSAGE"></textarea>
-          </div>
-      </div>
-      <div class="row mt-3">
-          <div class="col-12">
-              <button type="submit" class="btn btn-danger">SEND MESSAGE</button>
-          </div>
-      </div>
-  </form>
+<!-- Subscribe Section -->
+<section class="subscribe-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <h3>SUBSCRIBE TO US</h3>
+                <form id="subscribeForm" class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Enter your email..." required>
+                    <button class="btn btn-subscribe" type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Footer Section -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <!-- Release Column -->
+            <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                <div class="footer-category">
+                    <h4>RELEASE</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">2016</a></li>
+                        <li><a href="#">2015</a></li>
+                        <li><a href="#">2014</a></li>
+                        <li><a href="#">2013</a></li>
+                        <li><a href="#">2012</a></li>
+                        <li><a href="#">2011</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Movies Column -->
+            <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                <div class="footer-category">
+                    <h4>MOVIES</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">ADVENTURE</a></li>
+                        <li><a href="#">COMEDY</a></li>
+                        <li><a href="#">FANTASY</a></li>
+                        <li><a href="#">ACTION</a></li>
+                        <li><a href="#">MOVIES</a></li>
+                        <li><a href="#">HORROR</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Review Movies Column -->
+            <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                <div class="footer-category">
+                    <h4>REVIEW MOVIES</h4>
+                    <div class="review-tags">
+                        <span>Comedy</span>
+                        <span>Horror</span>
+                        <span>Historical</span>
+                        <span>Romantic</span>
+                        <span>Love</span>
+                        <span>Action</span>
+                        <span>Reviews</span>
+                        <span>Comedy</span>
+                        <span>Horror</span>
+                        <span>Historical</span>
+                        <span>Romantic</span>
+                        <span>Love</span>
+                        <span>Comedy</span>
+                        <span>Horror</span>
+                        <span>Historical</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest Movies Column -->
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-category">
+                    <h4>LATEST MOVIES</h4>
+                    <div class="latest-movie">
+                        <div class="latest-movie-title">Eunend Ut Molestie</div>
+                    </div>
+                    <div class="latest-movie">
+                        <div class="latest-movie-title">Eorum Rerum Tenet</div>
+                    </div>
+                    <div class="latest-movie">
+                        <div class="latest-movie-title">Eunend Ut Molestie</div>
+                    </div>
+                    <div class="latest-movie">
+                        <div class="latest-movie-title">Eorum Rerum Tenet</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3">
+                <!-- ALLEZCINE Logo -->
+                <div class="text-center mb-4">
+                    <h2><span style="color: #ff3b30;">ALLEZ</span>CINE!</h2>
+                </div>
+                
+                <!-- Movie Grid -->
+                <div class="movie-grid">
+                    <div class="movie-item">
+                        <img src="/api/placeholder/110/150" alt="Movie 1">
+                    </div>
+                    <div class="movie-item">
+                        <img src="/api/placeholder/110/150" alt="Movie 2">
+                    </div>
+                    <div class="movie-item">
+                        <img src="/api/placeholder/110/150" alt="Movie 3">
+                    </div>
+                    <div class="movie-item">
+                        <img src="/api/placeholder/110/150" alt="Movie 4">
+                    </div>
+                    <div class="movie-item">
+                        <img src="/api/placeholder/110/150" alt="Movie 5">
+                    </div>
+                    <div class="movie-item">
+                        <img src="/api/placeholder/110/150" alt="Movie 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Connect Section -->
+        <div class="social-connect mt-5">
+            <h4>CONNECT US</h4>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<a href="#" class="scroll-top" id="scrollTop">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<!-- Bootstrap & jQuery JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Form submission handling
+    $(document).ready(function() {
+        // Contact form submission
+        $('#contactForm').submit(function(e) {
+            e.preventDefault();
+            alert('Message sent successfully!');
+            this.reset();
+        });
+        
+        // Subscribe form submission
+        $('#subscribeForm').submit(function(e) {
+            e.preventDefault();
+            alert('Subscribed successfully!');
+            this.reset();
+        });
+        
+        // Scroll to top functionality
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('#scrollTop').fadeIn();
+            } else {
+                $('#scrollTop').fadeOut();
+            }
+        });
+        
+        $('#scrollTop').click(function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 800);
+            return false;
+        });
+    });
+</script>
 
 
   

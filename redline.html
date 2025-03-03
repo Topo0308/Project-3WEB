@@ -11,7 +11,15 @@
 </head>
 <body>
 </head>
-
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let age = prompt("Please enter your age:");
+        if (age < 18) {
+            alert("Sorry, you are not allowed to access this site.");
+            window.location.href = "https://www.google.com";
+        }
+    });
+</script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><strong><span class="red-text">ALLEZ</span><span class="white-text">CINE!</span></a></strong>
@@ -355,7 +363,14 @@
       </section>
     <div class="container mt-4">
         <div class="movie-container">
-            
+            <div class="nav-buttons">
+                <button class="nav-btn nav-btn-prev" onclick="scrollMovies('prev')">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn nav-btn-next" onclick="scrollMovies('next')">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
             
             <div class="movie-carousel" id="movieCarousel">
               

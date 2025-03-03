@@ -108,8 +108,64 @@
                         <i class="fas fa-phone"></i> +32 465 8669
                     </a>
                     <div class="col-6 text-end auth-buttons">
-                      <button class="btn btn-dark btn-sm">LOGIN</button>
-                      <button class="btn btn-dark btn-sm">REGISTER</button>
+                      <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button>
+                      <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTER</button>
+
+                      <!-- Login Modal -->
+                      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="mb-3">
+                                  <label for="loginEmail" class="form-label" style="color: black;">Email address</label>
+                                  <input type="email" class="form-control" id="loginEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="loginPassword" class="form-label" style="color: black;">Password</label>
+                                  <input type="password" class="form-control" id="loginPassword" required>
+                                </div>
+                                <button type="submit" class="btn btn-dark">Login</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Register Modal -->
+                      <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="mb-3">
+                                  <label for="registerEmail" class="form-label" style="color: black;">Email address</label>
+                                  <input type="email" class="form-control" id="registerEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="registerPassword" class="form-label" style="color: black;">Password</label>
+                                  <input type="password" class="form-control" id="registerPassword" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="registerConfirmPassword" class="form-label" style="color: black;">Confirm Password</label>
+                                  <input type="password" class="form-control" id="registerConfirmPassword" required>
+                                </div>
+                                <button type="submit" class="btn btn-dark">Register</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                 </div>
             </div>
@@ -133,7 +189,7 @@
           <div class="col-md-2 col-sm-4 col-6">
               <div class="movie-card">
                   <div class="movie-thumbnail">
-                    <img src="images/168x196.jpg" alt="" class="img-fluid" style="width: 100%; height: auto;">
+        </div>            <img src="images/168x196.jpg" alt="" class="img-fluid" style="width: 100%; height: auto;">
                   </div>
                   <div class="movie-title text-center">X-Men</div>
                   <div class="movie-info">
